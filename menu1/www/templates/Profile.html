@@ -1,0 +1,16 @@
+<ion-view view-title="Profile">
+<ion-content>
+<ion-item-options side="left" ng-repeat="x in records">
+  <a class="item item-avatar" width="300" height="400" id="Ion"  ng-click="click({{x.subId}})">
+     <img src="/img/{{x.src}}" >
+   <ion-label> {{x.Name}} <br/>
+    {{x.class}}
+    </ion-label>
+  </a>
+ 
+ </ion-item>
+
+
+ </ion-content>
+</ion-view>  
+ 

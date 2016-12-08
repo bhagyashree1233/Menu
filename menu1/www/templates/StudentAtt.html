@@ -1,0 +1,20 @@
+<ion-view >
+<ion-nav-view name="menu"></ion-nav-view>
+<ion-content>
+<ion-item-options side="left"  ng-repeat="x in studentList" ng-controller="StudentAtt">
+  <a class="item item-avatar" width="300" height="400" id="Ion" ng-click="click(x)">
+     <img src="/img/{{x.src}}">
+   <ion-label> {{x.Name}} <br/>
+   <div >
+   <p ng-show="x.Present" > <i class="ion-right ion-thumbsup" ></i></p>
+   <p ng-show="!x.Present"> <i  class="ion-right ion-thumbsdown"></i></p>
+</div>
+    {{x.class}}     
+    </a> 
+    </ion-label>
+  </a>
+  <a > 
+ </ion-item>
+ </ion-content>
+</ion-view>  
+ 

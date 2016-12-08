@@ -1,0 +1,14 @@
+var myArray1 = [
+{
+"display": "Java",
+"url": "http://www.w3schools.com/js/default.asp"
+},
+{
+"display": "HT",
+"url": "http://www.w3schools.com/html/default.asp"
+},
+{
+"display": "CSS",
+"url": "http://www.w3schools.com/css/default.asp"
+}
+]

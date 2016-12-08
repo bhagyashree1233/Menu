@@ -1,0 +1,278 @@
+/* ----[ LINKS ]----*/
+/* all menu links */
+#s5_nav a, #subMenusContainer a{
+	text-decoration:none;
+}
+/* Just main menu links --[for non-javascript users this applies to submenu links as well]*/
+#s5_nav a{
+	margin:0;	
+}
+#s5_menu_wrap ul.menu {
+padding:0px !important;
+}
+#subMenusContainer ul li {
+	padding:0px;
+	margin:0px;
+    border: 1px solid #77624f;
+    border-radius: 8px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4) inset, -2px 3px 4px rgba(0, 0, 0, 0.4) inset;
+    margin: 5px;
+}
+/* Just sub menu links */
+#subMenusContainer a, #s5_nav li li a{
+	text-align:left;
+	font-size:1.2em;text-shadow:-1px 1px 2px #000000;
+	white-space: pre;
+	width:auto;
+
+}#subMenusContainer a, #s5_nav li li a:hover{
+
+}
+
+#subMenusContainer a:after, #s5_nav li li a:after {
+content:"\a";
+}
+/* ----[ OLs ULs, LIs, and DIVs ]----*/
+/* All ULs and OLs */
+#nav, #s5_nav ul, #s5_nav ol, #subMenusContainer ul, #subMenusContainer ol { 
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1em;
+}
+/* All submenu OLs and ULs */
+#s5_nav ol, #s5_nav ul, #subMenusContainer ul, #subMenusContainer ol {	
+	left:0;
+}
+#subMenusContainer img {
+margin-right:8px;
+}
+#s5_nav img {
+margin-right:6px;
+margin-top:2px;
+}
+/* Submenu Outer Wrapper - each submenu is inside a div with this class - javascript users only */
+.s5_sub_wrap, .s5_sub_wrap_lower, .s5_sub_wrap_rtl, .s5_sub_wrap_lower_rtl {
+	display:none; 
+	position: absolute; 
+	overflow:hidden; 
+	padding-top:0px;
+	padding-bottom:5px;
+	padding-right:5px;
+	margin-left:0px;
+	margin-top:3px;
+}
+.s5_sub_wrap_rtl { 
+	margin-left:5px;
+}
+.s5_sub_wrap_lower_rtl, .s5_sub_wrap_lower {
+	margin-left:0px;
+	margin-right:0px;
+	padding-top:3px;
+}
+.mainParentBtn a {
+	padding-right:24px;
+}
+.subParentBtn .S5_submenu_item a {
+	background:url(../images/s5_menu_arrow_subs.png) no-repeat right center !important;
+	display:block;
+}
+#subMenusContainer div.s5_sub_wrap ul {
+	padding-top:1px;padding-bottom:5px; margin: 5px;
+	border:solid 2px rgba(219, 209, 199, 0.1);border-top:0px;
+	-webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4), -2px 3px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4), -2px 3px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4), -2px 3px 4px rgba(0, 0, 0, 0.4);
+	-webkit-border-radius:0px 0px 6px 6px;-moz-border-radius:0px 0px 6px 6px;border-radius:0px 0px 6px 6px;
+
+}
+#subMenusContainer div.s5_sub_wrap_rtl ul {
+	padding-top:10px;padding-bottom:10px;
+	border:solid 1px #E8E8E8;
+	-webkit-box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.4);
+}
+#subMenusContainer div.s5_sub_wrap_lower ul, #subMenusContainer div.s5_sub_wrap_lower_rtl ul {
+	padding-top:12px;
+	padding-bottom:12px;
+	border:solid 1px #E8E8E8;
+	-webkit-box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.4);
+}
+#subMenusContainer div.s5_sub_wrap ul ul, #subMenusContainer div.s5_sub_wrap_lower ul ul, #subMenusContainer div.s5_sub_wrap_rtl ul ul, #subMenusContainer div.s5_sub_wrap_lower_rtl ul ul {
+	padding:0px;
+	margin:0px;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none;
+	background:none;
+	border:none !important;
+}
+#subMenusContainer li.subParentBtn, #subMenusContainer li.subMenuBtn {
+	clear:both;
+
+	padding:2px;
+	min-width:212px;
+
+}
+/* List items in main menu --[for non-javascript users this applies to submenus as well]  */
+#s5_nav li, .phpbb .button { 
+	display:block;
+	list-style:none;
+	position:relative;
+	float:left;
+	overflow:hidden;
+	overflow:hidden;
+	margin-left:15px;
+	padding:8px 5px 5px;
+	height:25px;background: #708e55; /* Old browsers */
+background: -moz-linear-gradient(top,  #708e55 0%, #406807 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#708e55), color-stop(100%,#406807)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #708e55 0%,#406807 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #708e55 0%,#406807 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #708e55 0%,#406807 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #708e55 0%,#406807 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#708e55', endColorstr='#406807',GradientType=0 ); /* IE6-9 */
+
+-moz-box-shadow: 0 0 1px 2px rgba(0,0,0,0.4),0 0 1px 3px rgba(219,209,199,0.4);
+-webkit-box-shadow: 0 0 1px 2px rgba(0,0,0,0.4),0 0 1px 3px rgba(219,209,199,0.4);
+box-shadow: 0 0 1px 2px rgba(0,0,0,0.4),0 0 1px 3px rgba(219,209,199,0.4);    border:1px solid #5B422B;    border-radius:6px;-webkit-border-radius: 6px;-moz-border-radius: 6px;	
+}
+#s5_nav li a {
+	font-size:1em;
+	color:#FFFFFF !important;
+	font-weight:500;
+	display:block;
+	text-shadow: 1px 1px 1px #000, 0 1px 1px #3d704b;
+	}
+#s5_nav li.mainParentBtn .s5_level1_span2 a {
+	padding-right:20px;
+}
+.S5_parent_subtext {
+	display:block;
+	clear:both;
+	cursor:pointer;
+	font-size:0.7em;
+	color:#FFFFFF !important;
+	margin-top:-6px;
+	font-weight:normal !important;
+}
+#s5_nav li .s5_level1_span1 {
+background:none;
+display:block;
+}
+#s5_nav li .s5_level1_span2 {
+background:none;
+display:block;
+}
+#subMenusContainer .moduletable {
+padding:10px;
+padding-top:0px;
+}
+#subMenusContainer .moduletable h3 {
+margin-bottom:8px;
+}
+.S5_submenu_item {padding:10px;display:block;}
+.S5_grouped_child_item .S5_submenu_item {
+	padding:4px !important;
+	border:none !important;
+}
+#subMenusContainer li{list-style: none;}
+#subMenusContainer{	display:block; 	position:absolute;	top:0;	left:-7px;	width:100%;	height:0;	overflow:visible;	z-index:1000000000; }
+/* --------------------------[ The below is just for non-javscript users ]--------------------------*/
+#s5_nav li li{	float:none; }
+#s5_nav li li a{ /* Just submenu links*/	
+	position:relative;
+	float:none;
+}
+#s5_nav li ul { /* second-level lists */
+	position: absolute;
+	width: 10em;
+	margin-left: -1000em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+	margin-top:2.2em;
+}
+/* third-and-above-level lists */
+#s5_nav li ul ul { margin: -1em 0 0 -1000em; }
+#s5_nav li:hover ul ul {	margin-left: -1000em; }
+ /* lists nested under hovered list items */
+#s5_nav li:hover ul{	margin-left: 0; }
+#s5_nav li li:hover ul {	margin-left: 10em; margin-top:-2.5em;}
+/* extra positioning rules for limited noscript keyboard accessibility */
+#s5_nav li a:focus + ul {  margin-left: 0; margin-top:2.2em; }
+#s5_nav li li a:focus + ul { left:0; margin-left: 1010em; margin-top:-2.2em;}
+#s5_nav li li a:focus {left:0;  margin-left:1000em; width:10em;  margin-top:0;}
+#s5_nav li li li a:focus {left:0; margin-left: 2010em; width: 10em;  margin-top:-1em;}
+#s5_nav li:hover a:focus{ margin-left: 0; }
+#s5_nav li li:hover a:focus + ul { margin-left: 10em; }
+span.menu_subtext {
+	font-weight:normal;
+	line-height:10px;
+}
+.S5_subtext {
+font-size:0.75em;
+padding-top:3px;
+cursor:pointer;
+}
+.S5_grouped_child_item .S5_subtext {
+padding-left:20px;
+font-size:0.7em;
+}
+span.menu_title{
+	line-height:12px;
+	text-align:center;
+}
+
+div.has_description{
+	height:auto;
+}
+div.S5_grouped_child_item span{
+	font-size:0.95em;
+}
+div.S5_grouped_child_item {
+	padding-top:0px;
+	margin-top:1px;
+	padding-bottom:2px;
+	padding-left:13px;
+}
+div.S5_grouped_child_item span span.S5_submenu_item a{
+	padding:0px;
+	padding-left:12px;
+	color:#F4F4E8;
+}
+#subMenusContainer div.s5_sub_wrap ul, .S5_subtext, .S5_menu_module_group .moduletable {
+color:#F4F4E8;
+}
+.mainParentBtn a {
+background:url(../images/s5_menu_arrow.png) no-repeat right center !important;
+}
+#subMenusContainer li .S5_submenu_item, #subMenusContainer .moduletable {
+border-top:solid 0px #b5a18d;
+}
+.S5_grouped_child_item .S5_submenu_item {
+background:none!important;
+}
+
+.S5_submenu_item:hover, .S5_grouped_child_item .S5_submenu_item:hover {
+background:none;color:#fff!important;
+}
+.S5_menu_module_group {
+padding-top:1px;
+}
+.mainParentBtn a {
+display:block;
+}
+#subMenusContainer div ul {
+background: url("../images/parchment-bg.png") repeat scroll 50% center #887158; /* Old browsers */
+background: url("../images/parchment-bg.png") repeat scroll 50% center,-moz-linear-gradient(top,  #887158 5%, #968069 20%, #968069 54%, #776541 92%, #6b5b4a 100%)!important; /* FF3.6+ */
+background: url("../images/parchment-bg.png") repeat scroll 50% center,-webkit-gradient(linear, left top, left bottom, color-stop(0%,##887158), color-stop(15%,#968069), color-stop(54%,#968069), color-stop(92%,#776541), color-stop(100%,#6b5b4a))!important; /* Chrome,Safari4+ */
+background: url("../images/parchment-bg.png") repeat scroll 50% center,-webkit-linear-gradient(top,  #887158 5%,#968069 20%,#968069 54%,#776541 92%,#6b5b4a 100%)!important; /* Chrome10+,Safari5.1+ */
+background: url("../images/parchment-bg.png") repeat scroll 50% center,-o-linear-gradient(top,  #887158 5%,#968069 20%,#968069 54%,#776541 92%,#6b5b4a 100%)!important; /* Opera 11.10+ */
+background: url("../images/parchment-bg.png") repeat scroll 50% center,-ms-linear-gradient(top,  #887158 5%,#968069 20%,#968069 54%,#776541 92%,#6b5b4a 100%)!important; /* IE10+ */
+background: url("../images/parchment-bg.png") repeat scroll 50% center,linear-gradient(to bottom,  #887158 5%,#968069 20%,#968069 54%,#776541 92%,#6b5b4a 100%)!important; /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#887158', endColorstr='#6b5b4a',GradientType=0 )!important; /* IE6-9 */
+}
+#subMenusContainer ul ul {font-size: 0.9em;}	
+#s5_nav li.mainMenuParentBtnFocused, #s5_nav li.active:hover {border: 1px solid #40271A !important;}
+

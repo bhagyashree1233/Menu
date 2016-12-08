@@ -1,0 +1,37 @@
+<ion-view view-title="Student Information">
+    <ion-content ng-controller="StudentInform">
+   
+  <div class="card">
+  <div class="item item-thumbnail-right">
+  <img  src="/img/default.png" ng-src="{{myImage}}" ng-click="StudentPhoto()">
+ </div>
+  </div>
+   
+        <div class="list">
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Name</span>
+                <input type="text" placeholder="First Name" ng-model="Detail.Name">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Parent Name</span>
+                <input type="text" placeholder="Parent Name" ng-model="Detail.ParentName">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Mobile Number</span>
+                <input type="text" placeholder="Mobile Number" ng-model="Detail.MobileNumber">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Email Id</span>
+                <input type="text" placeholder="Email" ng-model="Detail.Email">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Adress</span>
+                <h1>{{myWelcome}}</h1>
+                <textarea placeholder="Address" ng-model="Detail.Address"></textarea>
+            </label>
+            </div>
+            <button class="button button-positive" ng-click="click()">Submit</button>
+    
+        
+    </ion-content>
+</ion-view>

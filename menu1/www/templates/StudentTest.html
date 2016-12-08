@@ -1,0 +1,18 @@
+<ion-view view-title="Student Test">
+<ion-content ng-controller='StdTst'>
+<ol class="list" >
+<div ng-repeat="list in Survey">
+<div class="item item-divider" >
+<li  class="item-text-wrap">{{list.question}}</li>
+</div>
+<div class="item" class="item-text-wrap">
+<ol class="Ilist">
+<ion-checkbox  ng-repeat="innerlist in list.answers" ng-if="list.answerType=='checkbox'"class="item-text-wrap"><li>{{innerlist}}</li></ion-checkbox>
+<ion-radio  ng-repeat="innerlist in list.answers" ng-if="list.answerType=='radio'" class="item-text-wrap"><li>{{innerlist}}</li></ion-radio>
+<input  type="text" placeholder="Enter Answers"  ng-if="list.answerType=='textview'"/>
+</ol>
+</div>
+</div>
+</ol>
+</ion-content>
+</ion-view>

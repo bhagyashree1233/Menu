@@ -1,0 +1,15 @@
+/* Add your own custom css to this file. You may wish to use css !important calls to override css from the template css files.
+----------------------------------------------------------- */
+#roksearch_results {background: none repeat scroll 0 0 #8a715a;border: 1px solid #8A715A;}
+
+#roksearch_results .roksearch_header, #roksearch_results .roksearch_row_btm {background: none repeat scroll 0 0 #8a715a;border-bottom: 1px solid #dfdfdf;color: #ccc;}
+#roksearch_results .roksearch_odd {background: none repeat scroll 0 0 #dbd8c9;border-bottom: 1px solid #bcb0a6;}
+#roksearch_results .roksearch_even {background: none repeat scroll 0 0 #e8e3cc;border-bottom: 1px solid #b2a080;}
+#roksearch_results span {color: #513f25;font-weight: normal;}
+#roksearch_results .arrow-left-disabled {background: none repeat scroll 0 0 #6a563f;border: 1px solid #e9e9e9;}
+#roksearch_results .arrow-right-disabled {background: none repeat scroll 0 0 #6a563f;border: 1px solid #e9e9e9;}
+
+#s5_search_wrap input {margin:0px;background:url(../images/s5_search.png) no-repeat center left #d1cec0;padding-left:42px;padding-top:8px;padding-bottom:10px;width:200px !important;box-shadow: 0 0 2px 2px #e2dfcc, 0 0 4px 4px #c1bfb1 inset;-moz-box-shadow:0 0 2px 2px #e2dfcc, 0 0 4px 4px #c1bfb1 inset;-webkit-box-shadow:0 0 2px 2px #e2dfcc, 0 0 4px 4px #c1bfb1 inset;}
+
+
+#cboxLoadedContent input {padding-left: 3%;padding-right: 3%;width: auto;}

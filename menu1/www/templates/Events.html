@@ -1,0 +1,12 @@
+<ion-view view-title="Events">
+<ion-content>
+ <ion-list ng-repeat="list in eventList">
+ <ion-item class="item item-thumbnail-right"  >
+ <img ng-if="list.Pic" src={{list.Pic}}></img>
+ <h2>{{list.Date}}</h2><br/>
+ <p>{{list.Event}}</p>
+ </ion-item>
+ </ion-list> 
+  
+</ion-content>
+</ion-view>

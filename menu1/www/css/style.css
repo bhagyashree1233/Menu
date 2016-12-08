@@ -1,0 +1,41 @@
+#Ion{
+background-color:#FFEBCD
+;
+margin:auto;
+}
+.ion-thumbsup{
+    color:#32cd32;
+     margin-left:250px;
+     max-width:100px;
+     font-size: 30px !important;
+
+}
+.ion-thumbsdown{
+    color:red;
+    margin-left:250px;
+    font-size: 30px !important;
+}
+
+.radio-icon{
+   color:blue;
+    
+}
+.checkbox-icon{
+    color:lightgreen; 
+}
+#Prac{
+ background-image: url(/img/im.jpg);
+ background-repeat:no-repeat;
+ background-position:left bottom;
+ background-attachement:fixed;
+ background:#AACCAA url(/img/sc2.jpg)  no-repeat right top;
+}
+ol.list{
+ list-style-type:upper-roman;
+ list-style-position:inside;
+}
+
+ol.Ilist{
+ list-style-type:lower-alpha;
+ list-style-position:inside;
+}
