@@ -2,10 +2,8 @@ angular.module('starter.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
   //This File Edited from git
->>>>>>> 556a321f81efff6d68bbda4a2d6a83b099bd38d5
-<<<<<<< HEAD
 	//This Is the 4 Commit from workspace
-=======
+
 
 //Edited Controller in git
   // With the new view caching in Ionic, Controllers are only called
